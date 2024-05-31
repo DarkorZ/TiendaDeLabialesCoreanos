@@ -1,0 +1,171 @@
+@charset "ISO-8859-1";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+ header img {
+        float: right; /* Esto alinea el logo a la derecha */
+        margin-left: 20px; /* Esto añade un margen izquierdo para separar el logo del título */
+        margin-top: 0px;
+    }
+    .navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 15px 20px;
+    margin: 0 10px;
+}
+
+.navbar a:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+.titulo {
+    text-align: center; /* Para centrar horizontalmente */
+    margin-top: 0; /* Eliminar el margen superior predeterminado */
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Cambia la posición a relativa */
+    width: 100%;
+    bottom: 0;
+}
+nav {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+.logo-container {
+    top: 10px;
+    right: 10px;
+    width: 20px;
+}
+
+.logo-container img {
+    width: 20px; 
+    height: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide a {
+    display: block;
+    flex: 0 0 100%;
+    text-align: center; /* Centrar las imágenes dentro del enlace */
+}
+
+.carousel-slide img {
+    width: 50%; /* Ajusta el ancho de las imágenes al 50% del contenedor del carrusel */
+    max-width: 200px; /* Establece un ancho máximo para las imágenes */
+    height: auto; /* Mantiene la relación de aspecto de las imágenes */
+    border-radius: 10px;
+    margin: auto; /* Centra las imágenes dentro del enlace */
+}
+
+
+
+.carousel-navigation {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-navigation label {
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 5px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+input#slide1:checked ~ .carousel-slide {
+    transform: translateX(0);
+}
+
+input#slide2:checked ~ .carousel-slide {
+    transform: translateX(-100%);
+}
+
+input#slide3:checked ~ .carousel-slide {
+    transform: translateX(-200%);
+}
+
+input#slide4:checked ~ .carousel-slide {
+    transform: translateX(-300%);
+}
+
+input#slide5:checked ~ .carousel-slide {
+    transform: translateX(-400%);
+}
+
+input#slide6:checked ~ .carousel-slide {
+    transform: translateX(-500%);
+}
+
+input#slide7:checked ~ .carousel-slide {
+    transform: translateX(-600%);
+}
+
+#gif-resized {
+    width: 200px;
+    height: auto;
+}
+
+/* CSS for Footer */
+
+
+
+
+
